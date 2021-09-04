@@ -59,6 +59,7 @@ table {
     background-color: #202020;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 }
 
 .navbar div {
@@ -95,10 +96,14 @@ table {
     border-radius: 5px;
 }
 
-.icon {
+.icon, .menuButton {
     font-size: 1.7em;
     position: relative;
     top: -6px;
+}
+
+.menuButton {
+    display: none;
 }
 
 .menu .dropdown:hover {
@@ -182,6 +187,7 @@ h2 {
     font-size: 1.2em;
     font-family: Montserrat;
     padding-bottom: 50px;
+    align-items: baseline;
 }
 
 .row .column h3 {
@@ -272,8 +278,39 @@ h2 {
     line-height: 2em;
 }
 
-.contact li, .contact li a {
+.contact li {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 300;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 900px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .row .column {
+        border: none;
+    }
+    h2 {
+        width: 400px;
+    }
+    .aboutme div {
+        flex-direction: column;
+    }
+    .aboutme div p {
+        width: 400px;
+    }
+    .portifolio .galleryRow {
+        display: flex;
+        flex-direction: column;
+    }
+    .dropdown {
+        display: none;
+    }
+    .menuButton {
+        display: block;
+    }
 }
