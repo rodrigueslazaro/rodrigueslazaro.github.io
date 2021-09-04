@@ -1,3 +1,279 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*
+        MY CSS
+*/
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #202020;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar div {
+    color: white;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 15px;
+    color: white;
+    margin-left: 10px;
+}
+
+.navbar .logo span:first-child {
+    font-weight: 400;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.menu div {
+    padding: 8px;
+    margin: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.icon {
+    font-size: 1.7em;
+    position: relative;
+    top: -6px;
+}
+
+.menu .dropdown:hover {
+    background-color: rgb(95, 95, 95);
+    transition: 300ms;
+}
+
+.icon:first-child {
+    margin-right: 0px;
+}
+
+.icon:hover {
+    color:rgb(223, 223, 223);
+    transition: 300ms;
+}
+
 header {
     text-align: center;
+    font-size: 3em;
+    font-weight: 300;
+    padding: 30px 30px;
+    margin-top: 100px;
+}
+
+body {
+    font-family: Roboto;
+    background-color: #f9f9f9;
+}
+
+.aboutme {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutme div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+h2 {
+    width: 800px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+.aboutme div img {
+    width: 250px;
+    border: 1px solid rgb(95, 95, 95);
+    padding: 2px;
+    margin: 20px;
+}
+
+.aboutme div p {
+    width: 650px;
+    text-justify: auto;
+    line-height: 1.5em;
+}
+
+.abilities h2, .aboutme h2, .portifolio h2, .contact h2 {
+    font-size: 1.7em;
+    padding: 5px;
+    border-bottom: 1px solid rgb(65, 65, 65);
+}
+
+.abilities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    padding: 100px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 1.2em;
+    font-family: Montserrat;
+    padding-bottom: 50px;
+}
+
+.row .column h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 7px;
+}
+
+.row .column h3 span {
+    position: relative;
+    top: 5px;
+    margin-right: 4px;
+}
+
+.row .column ul {
+    margin: 20px 50px 20px 50px;
+    line-height: 2em;
+}
+
+.row .column {
+    border-right: 1px solid rgb(65, 65, 65);
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.row .column:last-child {
+    border: none;
+}
+
+.markup {
+    background-color: #FFC074;
+    color: white;
+}
+
+.design {
+    background-color: #B6C867;
+    color: white
+}
+
+.coding {
+    background-color: #01937C;
+    color: white;
+}
+
+.portifolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portifolio img {
+    width: 260px;
+}
+
+.portifolio .galleryRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.portifolio .gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.portifolio .galleryCard {
+    margin: 15px 30px 15px 30px;
+    background-color: rgb(65, 65, 65);
+    color: white;
+}
+
+.portifolio .galleryCard p {
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact ul {
+    line-height: 2em;
+}
+
+.contact li, .contact li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 300;
 }

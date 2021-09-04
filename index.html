@@ -5,10 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dfd9b829b0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header><h1>Hi, I'm Lázaro Rodrigues</h1></header>
+
+    <nav class="navbar">
+        <a href="https://rodrigueslazaro.github.io">
+            <p class="logo"> <span>LAZARO</span> <span>RODRIGUES</span> </p>
+        </a>
+        <nav class="menu">
+            <a href="#sec1"><div class="dropdown">ABOUT ME</div></a>
+            <a href="#sec2"><div class="dropdown">ABILITIES</div></a>
+            <a href="#sec3"><div class="dropdown">PORTIFOLIO</div></a>
+            <a href="#sec4"><div class="dropdown">CONTACT</div></a>
+            <a href="https://www.linkedin.com/in/l%C3%A1zaro-rodrigues-689b21206/"><div class="icon"><i class="fab fa-linkedin"></i></div></a>
+            <a href="https://github.com/rodrigueslazaro"><div class="icon"><i class="fab fa-github-square"></i></div></a>
+        </nav>
+    </nav>
+
+    <header><h1>Hi, I'm Lázaro Rodrigues.</h1></header>
+
+    <section class="aboutme" id="sec1">
+        <h2>About me</h2>
+        <div class="aboutme-content">
+            <p>
+                Hi, my name is Lázaro Rodrigues and I am a Computer Engineering Graduate Student in Brazil.
+                I'm an aspiring Full Stack web developer and designer, with the ability to learn quickly
+                and efficiently.
+                I have built many websites from the ground up and using external tools and libraries
+                like bootstrap, buma, react and others.
+                You can check out my portifolio of web pages and applications down below!
+
+            </p>
+            <img src=assets/imgMe.jpg alt="a picutre of myself">
+        </div>
+    </section>
+
+    <section class="abilities" id="sec2">
+        <h2>My current abilities</h2>
+        <div class="row">
+            <div class="column">
+                <h3 class="markup"><span class="material-icons-outlined">article</span>Markup</h3>
+                <ul>
+                    <li>- HTML5</li>
+                    <li>- Semantic HTML</li>
+                    <li>- Bootstrap</li>
+                    <li>- Buma</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3 class="design"><span class="material-icons-outlined">palette</span>Design</h3>
+                <ul>
+                    <li>- CSS3</li>
+                    <li>- CSS Animations</li>
+                    <li>- Material Design</li>
+                    <li>- UI/UX</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3 class="coding"><span class="material-icons-outlined">code</span>Coding</h3>
+                <ul>
+                    <li>- JavaScript</li>
+                    <li>- Node.js</li>
+                    <li>- React</li>
+                    <li>- AJAX and APIs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="portifolio" id="sec3">
+        <h2>My Portifolio</h2>
+
+        <section class="gallery">
+            <div class="galleryRow">
+                <div class="galleryCard"><a href=""><img src="assets/galleryPlaceholder.jpg" alt="laptop"><p>Ping Pong Counter</p></a></div>
+                <div class="galleryCard"><a href=""><img src="assets/galleryPlaceholder.jpg" alt="laptop"><p>Ping Pong Counter</p></a></div>
+                <div class="galleryCard"><a href=""><img src="assets/galleryPlaceholder.jpg" alt="laptop"><p>Ping Pong Counter</p></a></div>
+            </div>
+            <div  class="galleryRow">
+                <div class="galleryCard"><a href=""><img src="assets/galleryPlaceholder.jpg" alt="laptop"><p>Ping Pong Counter</p></a></div>
+                <div class="galleryCard"><a href=""><img src="assets/galleryPlaceholder.jpg" alt="laptop"><p>Ping Pong Counter</p></a></div>
+                <div class="galleryCard"><a href=""><img src="assets/galleryPlaceholder.jpg" alt="laptop"><p>Ping Pong Counter</p></a></div>
+            </div>
+            <div class="galleryRow">
+                <div class="galleryCard"><a href=""><img src="assets/galleryPlaceholder.jpg" alt="laptop"><p>Ping Pong Counter</p></a></div>
+                <div class="galleryCard"><a href=""><img src="assets/galleryPlaceholder.jpg" alt="laptop"><p>Ping Pong Counter</p></a></div>
+                <div class="galleryCard"><a href=""><img src="assets/galleryPlaceholder.jpg" alt="laptop"><p>Ping Pong Counter</p></a></div>
+            </div>
+
+        </section>
+    </section>
+
+    <section class="contact" id="sec3">
+        <h2>Contact</h2>
+    </section>
 
     <script src="app.js"></script>
 </body>
