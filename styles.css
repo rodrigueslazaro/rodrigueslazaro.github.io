@@ -139,15 +139,20 @@ header {
     margin-top: 100px;
 }
 
+html {
+    scroll-behavior: smooth;    
+}
+
 body {
     font-family: Roboto;
-    background-color: #f9f9f9;
+    background-color: rgb(249, 249, 249);
 }
 
 .aboutme {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 200px;
 }
 
 .aboutme div {
@@ -166,7 +171,7 @@ h2 {
     width: 250px;
     border: 1px solid rgb(95, 95, 95);
     padding: 2px;
-    margin: 20px;
+    margin-bottom: 100px;
 }
 
 .aboutme div p {
@@ -174,6 +179,8 @@ h2 {
     text-justify: auto;
     line-height: 1.5em;
     font-size: 1.2em;
+    text-align: justify ;
+    text-justify: inter-word;
 }
 
 .abilities h2, .aboutme h2, .portifolio h2, .contact h2 {
@@ -187,63 +194,6 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-.row {
-    padding: 100px;
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    font-size: 1.2em;
-    font-family: Montserrat;
-    padding-bottom: 50px;
-    align-items: baseline;
-}
-
-.row .column h3 {
-    text-align: center;
-    font-weight: 600;
-    margin: 10px;
-    padding: 10px;
-    padding-top: 7px;
-}
-
-.row .column h3 span {
-    position: relative;
-    top: 5px;
-    margin-right: 4px;
-}
-
-.row .column ul {
-    margin: 20px 50px 20px 50px;
-    line-height: 2em;
-}
-
-.row .column {
-    border-right: 1px solid rgb(65, 65, 65);
-    padding-right: 50px;
-    padding-left: 50px;
-}
-
-.row .column:last-child {
-    border: none;
-}
-
-.markup {
-    background-color: #FFC074;
-    color: white;
-}
-
-.design {
-    background-color: #B6C867;
-    color: white
-}
-
-.coding {
-    background-color: #01937C;
-    color: white;
 }
 
 /*
@@ -293,12 +243,15 @@ h2 {
 .description {
     width: 500px;
     margin: 50px;
+    margin-left: 100px;
     padding: 30px;
     padding-top: 0;
 }
 
 .description p {
     line-height: 1.8em;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .project-1 {
@@ -306,6 +259,7 @@ h2 {
     display: flex;
     flex-direction: row;
     left: 50px;
+    margin-bottom: 100px;
 }
 
 .box{
@@ -354,17 +308,8 @@ h2 {
     background-color: rgba(218, 221, 165, 0.5);
 }
 
-.project-2 {
-    flex-direction: row-reverse;
-}
 
-.project-2 .colorbg-1 {
-    top: 20px; left: 750px;
-}
 
-.project-2 .colorbg-2 {
-    top: 75px; left: 700px;
-}
 
 /**********  front  **************/
 
@@ -389,6 +334,7 @@ h2 {
     margin: 0px;
     padding: 20px;
     height: 50px;
+    transition: 200ms;
 }
 
 .cardbtn {
@@ -423,22 +369,38 @@ h2 {
 */
 
 .contact {
+    background-color: rgb(226, 222, 222);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 0;
 }
 
-.contact ul {
-    line-height: 2em;
+.contact h2 {
+    margin-top: 10px;
 }
 
-.contact li {
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: 300;
-    margin-bottom: 100px;
+.contact div {
+    display: flex;
+    flex-direction: row;
 }
+
+.contact .icon {
+    color: #01937C;
+    font-size: 3em;
+}
+.contact a{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.contact .icon:hover {
+    color: #036d5d;
+    position: relative;
+    top: -8px;  
+}
+
 
 /*
 =====================================================================|
