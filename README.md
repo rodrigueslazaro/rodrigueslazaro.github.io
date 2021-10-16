@@ -1,4 +1,4 @@
-# Welcome to my personal homepage github!
+# Welcome to my personal github homepage!
 
 In this page you'll find information about me, my skills and a portifolio of my projects!
 
